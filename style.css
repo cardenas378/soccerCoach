@@ -4,11 +4,14 @@ body{
     background-size: cover;
     
 }
-
+/* ***** About me with Carousel *****  */
 .container-1 {
     display: flex;
     padding: 0 20px;
     margin-top: 75px;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .box-1{
@@ -19,10 +22,19 @@ body{
     font-family: 'Francois One', sans-serif;
     text-align: center;
     flex: 1;
-    color: whitesmoke;
-    /* background-color: rgba(185, 255, 168, 0.33); */
+    color: black;
     padding-right: 10px;
 }
+
+h2, p {
+        background-color: rgba(245, 245, 245, 0.788);
+        white-space: inherit;
+
+}
+
+
+/* ***** Main Navbar ***** */
+
 #main-nav {
     background-color: rgba(245,245,245 ,.50);
     text-align: center;
@@ -31,11 +43,8 @@ body{
 
 }
 
-#main-body {
-    text-align: center;
-    font-family: 'Francois One', sans-serif; 
-}
 
+/* ***** Carousel ***** */
 .carousel {
 
 border: 2px solid rgba(3, 241, 102, .33);
