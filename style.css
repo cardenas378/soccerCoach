@@ -2,35 +2,52 @@ body{
     background-image: url("https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80");
     background-position: center;
     background-size: cover;
+    background-attachment:fixed;
+
     
 }
-/* ***** About me with Carousel *****  */
-.container-1 {
+/* ***** container 1 *****  */
+
+@media(min-width:768px){.container-1 {
     display: flex;
-    padding: 0 20px;
-    margin-top: 75px;
-    flex-direction: row;
+    margin: 75px 20px 0 20px;
     align-items: center;
-    flex-flow: row wrap;
-}
+}}
+
 
 .box-1{
     flex: 1;
-    margin-left: 10px;
+    margin: 20px 10px;
+    opacity: .9;
+    text-align: center;
+
 }
 .box-2 {
     font-family: 'Francois One', sans-serif;
     text-align: center;
     flex: 1;
     color: black;
-    padding-right: 10px;
+    margin: 20px 10px;
+
 }
+
+
+/* ***** Container 2 ***** */
+@media(min-width:768px){.container-2 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
+}}
 
 h2, p {
         background-color: rgba(245, 245, 245, 0.788);
-        white-space: inherit;
-
 }
+
+.carousel{
+        border: 2px solid rgba(3, 241, 102, .33);
+}
+
 
 
 /* ***** Main Navbar ***** */
@@ -40,16 +57,17 @@ h2, p {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     opacity: .75;
+    /* position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%; */
 
 }
 
+/* ***** Footer ******/
 
-/* ***** Carousel ***** */
-.carousel {
-
-border: 2px solid rgba(3, 241, 102, .33);
-}
-
-.carousel-inner {
-opacity: .90;
+footer{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px;
 }
